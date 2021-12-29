@@ -10,6 +10,8 @@ class Connect:
         return info 
 
 class Bike: 
+    price_deltas = [] # This empty list will contain the price delta objects associated to a particular bike after update 
+
     def __init__(self, listing):
         self.ad_id = int(listing['ad_id']) 
         self.price = float(listing['price'])
